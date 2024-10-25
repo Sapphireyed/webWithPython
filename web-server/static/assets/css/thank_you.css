@@ -1,0 +1,57 @@
+div#thank_you {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(27, 31, 34);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  position: relative;
+}
+
+#thank_you .close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  text-indent: 4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  box-shadow: none;
+}
+
+#thank_you .close:before {
+  transition: background-color 0.2s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  background-position: center;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline%7Bstroke:%23ffffff%3Bstroke-width:1%3B%7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18'/%3E%3Cline x1='18' y1='2' x2='2' y2='18'/%3E%3C/svg%3E");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+#thank_you .close:hover {
+  background-color: transparent;
+}
+
+#thank_you .close:hover:before {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+#thank_you .close:active:before {
+  background-color: rgba(255, 255, 255, 0.175);
+}
